@@ -182,8 +182,7 @@ def update(frame):
     global obs
     cos_t, sin_t, theta_dot = obs
     theta = np.arctan2(sin_t, cos_t)
-    if not TARGET_UP:
-        theta = -theta
+    theta = -theta
 
     torque_value = safe_fuzzy_torque(cos_t, sin_t, theta_dot) if USE_FUZZY else 0.0
 
