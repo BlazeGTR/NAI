@@ -1,8 +1,8 @@
 """
-Autor: Błażej Majchrzak, Marceli Gosztyła
+Autorzy: Błażej Majchrzak, Marceli Gosztyła
 
-Symulacja wahadła (Pendulum, Gymnasium Classic Control)
-z logiką rozmytą
+Opis problemu:
+Symulacja wahadła z logiką rozmytą. Celem jest zatrzymanie wahadłą na szczycie, mogąc jedynie bujać je na lewo i prawo
 
 Instalacja wymaganych bibliotek:
 !pip install gymnasium[classic_control] scikit-fuzzy matplotlib numpy
