@@ -4,6 +4,12 @@ Autorzy: Błażej Majchrzak, Marceli Gosztyła
 Opis problemu:
 Symulacja wahadła z logiką rozmytą. Celem jest zatrzymanie wahadłą na szczycie, mogąc jedynie bujać je na lewo i prawo
 
+Wejścia:
+Cos(x), Sin(x), Prędkość kątowa
+
+Wyjście:
+Siła popychania wahadła
+
 Instalacja wymaganych bibliotek:
 !pip install gymnasium[classic_control] scikit-fuzzy matplotlib numpy
 """
