@@ -1,3 +1,31 @@
+"""
+Movie Recommendation System using User Clustering (KMeans)
+Autor: Błażej Majchrzak
+
+Opis:
+    Program implementuje prosty system rekomendacji filmów oparty na klastrowaniu
+    użytkowników według ich podobieństwa ocen.
+    wykorzystuje algorytm KMeans do grupowania
+    użytkowników o zbliżonych preferencjach. Na tej podstawie generuje:
+
+        - rekomendacje filmów, których dany użytkownik jeszcze nie widział,
+        anty-rekomendacje (filmy najmniej oceniane przez podobnych użytkowników),
+        - opcjonalne pobieranie dodatkowych informacji o filmach z API OMDb.
+
+Potrzebne biblioteki:
+     pip install requests
+
+Instrukcja użycia:
+    1. Umieść plik „filmy_utf8.csv” w tym samym katalogu co skrypt.
+    2. Uruchom program (np. w Google Colab lub Pythonie lokalnie).
+    3. Program wyświetli listę dostępnych użytkowników — podaj ich nazwę lub numer.
+    4. Wybierz, czy pobierać dodatkowe dane z OMDb.
+    5. Wynjk:
+        – listę rekomendowanych filmów,
+        – listę filmów do unikania,
+
+"""
+
 import pandas as pd
 import os
 from sklearn.cluster import KMeans
@@ -300,7 +328,7 @@ def main():
     Main program: load data, build rating matrix, ask user,
     compute recommendations and display results.
     """
-    raw = load_movie_data("filmy.csv")
+    raw = load_movie_data("filmy_utf8.csv")
 
     data_dict = parse_ratings(raw)
     ratings = create_ratings_matrix(data_dict)
