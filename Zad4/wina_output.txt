@@ -1,0 +1,54 @@
+Sample of data:
+   fixed acidity  volatile acidity  citric acid  residual sugar  chlorides  \
+0            7.4              0.70         0.00             1.9      0.076   
+1            7.8              0.88         0.00             2.6      0.098   
+2            7.8              0.76         0.04             2.3      0.092   
+3           11.2              0.28         0.56             1.9      0.075   
+4            7.4              0.70         0.00             1.9      0.076   
+
+   free sulfur dioxide  total sulfur dioxide  density    pH  sulphates  \
+0                 11.0                  34.0   0.9978  3.51       0.56   
+1                 25.0                  67.0   0.9968  3.20       0.68   
+2                 15.0                  54.0   0.9970  3.26       0.65   
+3                 17.0                  60.0   0.9980  3.16       0.58   
+4                 11.0                  34.0   0.9978  3.51       0.56   
+
+   alcohol  quality  target  
+0      9.4        5       0  
+1      9.8        5       0  
+2      9.8        5       0  
+3      9.8        6       1  
+4      9.4        5       0  
+
+Decision Tree accuracy: 0.7275
+              precision    recall  f1-score   support
+
+           0       0.70      0.72      0.71       186
+           1       0.75      0.73      0.74       214
+
+    accuracy                           0.73       400
+   macro avg       0.73      0.73      0.73       400
+weighted avg       0.73      0.73      0.73       400
+
+
+SVM (RBF) accuracy: 0.755
+              precision    recall  f1-score   support
+
+           0       0.72      0.77      0.74       186
+           1       0.79      0.74      0.76       214
+
+    accuracy                           0.76       400
+   macro avg       0.75      0.76      0.75       400
+weighted avg       0.76      0.76      0.76       400
+
+
+Best SVM accuracy: 0.775
+Best params: {'C': 10, 'gamma': 'scale', 'kernel': 'rbf'}
+              precision    recall  f1-score   support
+
+           0       0.74      0.79      0.77       186
+           1       0.81      0.76      0.78       214
+
+    accuracy                           0.78       400
+   macro avg       0.77      0.78      0.77       400
+weighted avg       0.78      0.78      0.78       400

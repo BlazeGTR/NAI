@@ -1,0 +1,47 @@
+Sample of data:
+   age  sex  cp  trestbps  chol  fbs  restecg  thalach  exang  oldpeak  slope  \
+0   63    1   3       145   233    1        0      150      0      2.3      0   
+1   37    1   2       130   250    0        1      187      0      3.5      0   
+2   41    0   1       130   204    0        0      172      0      1.4      2   
+3   56    1   1       120   236    0        1      178      0      0.8      2   
+4   57    0   0       120   354    0        1      163      1      0.6      2   
+
+   ca  thal  target  
+0   0     1       1  
+1   0     2       1  
+2   0     2       1  
+3   0     2       1  
+4   0     2       1  
+
+Decision Tree accuracy: 0.7868852459016393
+              precision    recall  f1-score   support
+
+           0       0.86      0.64      0.73        28
+           1       0.75      0.91      0.82        33
+
+    accuracy                           0.79        61
+   macro avg       0.80      0.78      0.78        61
+weighted avg       0.80      0.79      0.78        61
+
+
+SVM (RBF) accuracy: 0.819672131147541
+              precision    recall  f1-score   support
+
+           0       0.90      0.68      0.78        28
+           1       0.78      0.94      0.85        33
+
+    accuracy                           0.82        61
+   macro avg       0.84      0.81      0.81        61
+weighted avg       0.83      0.82      0.82        61
+
+
+Best SVM accuracy: 0.7540983606557377
+Best parameters: {'C': 1, 'gamma': 'scale', 'kernel': 'sigmoid'}
+              precision    recall  f1-score   support
+
+           0       0.81      0.61      0.69        28
+           1       0.72      0.88      0.79        33
+
+    accuracy                           0.75        61
+   macro avg       0.77      0.74      0.74        61
+weighted avg       0.76      0.75      0.75        61

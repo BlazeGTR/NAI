@@ -1,0 +1,29 @@
+Podsumowanie eksperymentu z kernelami SVM
+Dataset: Wine Quality (red) - binarna klasyfikacja (quality >= 6 => good)
+
+1. Linear kernel:
+   - Prosty, liniowy separator
+   - Działa dobrze, gdy dane są prawie liniowo separowalne
+   - Accuracy w naszych testach: ~0.73-0.75
+
+2. RBF kernel:
+   - Elastyczny, nieliniowy
+   - Parametr gamma decyduje o „szerokości” wpływu punktów
+   - Najlepszy wynik w naszych testach: 0.775 (C=10, gamma=scale)
+   - Najczęściej najlepszy kernel dla danych nieliniowych
+
+3. Polynomial kernel:
+   - Modeluje złożone relacje wielomianowe
+   - Wyższy stopień (degree) może prowadzić do przeuczenia
+   - Accuracy w naszych testach: ~0.74-0.76
+
+4. Sigmoid kernel:
+   - Działa podobnie do perceptronu
+   - Rzadko daje najlepsze wyniki w praktyce
+   - Accuracy w naszych testach: ~0.70-0.74
+
+Wnioski:
+- RBF kernel najlepiej radzi sobie z nieliniowymi zależnościami w zbiorze Wine Quality
+- Linear kernel sprawdza się dla prostych przypadków
+- Polynomial kernel może pomóc przy bardziej złożonych danych, ale zwiększa ryzyko przeuczenia
+- Sigmoid kernel jest rzadko najlepszy, zwykle mniej skuteczny niż RBF
